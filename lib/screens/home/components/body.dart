@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:taximate_mobile/components/background/plain_background.dart';
-import 'package:taximate_mobile/screens/inner/inner_screen.dart';
+import 'package:taximate_mobile/screens/home/components/home_tab_controller.dart';
 
 class Body extends StatefulWidget {
   const Body({Key? key}) : super(key: key);
@@ -12,31 +12,6 @@ class Body extends StatefulWidget {
 class _BodyState extends State<Body> {
   @override
   Widget build(BuildContext context) {
-    return Background(
-      child: Container(
-        color: Colors.pink[300],
-        child: Center(
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              TextButton(
-                onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => InnerScreen()));
-                },
-                child: Text(
-                  'Go to next screen',
-                  style: TextStyle(fontSize: 15),
-                ),
-                style: TextButton.styleFrom(
-                  backgroundColor: Colors.purple,
-                  primary: Colors.white,
-                ),
-              ),
-            ],
-          ),
-        ),
-      ),
-    );
+    return Background(child: HomeTabController());
   }
 }
