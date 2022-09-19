@@ -65,14 +65,14 @@ class _HomeTabControllerState extends State<HomeTabController> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
                 TabButton(
-                  tabName: 'My Taxi',
+                  tabIndex: 0,
                   tabStates: tabStates[0],
                   tabPress: () {
                     setTabWithView(0);
                   },
                 ),
                 TabButton(
-                  tabName: 'Search Taxi',
+                  tabIndex: 1,
                   tabStates: tabStates[1],
                   tabPress: () {
                     setTabWithView(1);

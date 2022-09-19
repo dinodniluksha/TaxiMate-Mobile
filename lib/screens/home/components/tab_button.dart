@@ -3,14 +3,14 @@ import 'package:taximate_mobile/components/button/round_button.dart';
 import 'package:taximate_mobile/components/icon_box.dart';
 
 class TabButton extends StatelessWidget {
-  final String tabName;
+  final double tabIndex;
   final double textSize;
   final Color textColor;
   final VoidCallback tabPress;
   final bool tabStates;
   const TabButton({
     Key? key,
-    required this.tabName,
+    required this.tabIndex,
     this.textSize = 18,
     this.textColor = Colors.white,
     required this.tabStates,
@@ -26,20 +26,27 @@ class TabButton extends StatelessWidget {
       content: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
-          // IconBox(
-          //   iconPath: "assets/icons/taxi.svg",
-          //   iconWidth: 30,
-          //   iconHeight: 20,
-          // ),
           IconBox(
-            iconPath: "assets/icons/taxi_purple.svg",
+            iconPath: tabIndex == 0
+                ? tabStates
+                    ? 'assets/icons/taxi_purple.svg'
+                    : 'assets/icons/taxi_black.svg'
+                : tabIndex == 1
+                    ? tabStates
+                        ? 'assets/icons/search_purple.svg'
+                        : 'assets/icons/search_black.svg'
+                    : '',
             iconWidth: 40,
             iconHeight: 30,
           ),
           Text(
-            tabName,
+            tabIndex == 0
+                ? 'My Taxi'
+                : tabIndex == 1
+                    ? 'Search Taxi'
+                    : '',
             style: TextStyle(
-                color: tabStates ? Colors.white : Colors.indigo.shade900,
+                color: tabStates ? Colors.white : Colors.black,
                 fontSize: 17,
                 fontWeight: FontWeight.bold),
           )

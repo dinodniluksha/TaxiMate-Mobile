@@ -19,7 +19,7 @@ class InnerScreen extends StatelessWidget {
               Navigator.pop(context);
             },
           ),
-          headMiddle: false,
+          screenName: 'Inner',
         ),
       ),
       body: Body(),
