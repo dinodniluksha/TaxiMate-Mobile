@@ -13,39 +13,41 @@ class _BodyState extends State<Body> {
   @override
   Widget build(BuildContext context) {
     return Background(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          TextButton(
-            onPressed: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => InnerScreen()));
-            },
-            child: Text(
-              'Go to next screen',
-              style: TextStyle(fontSize: 15),
+      child: SingleChildScrollView(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            TextButton(
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => InnerScreen()));
+              },
+              child: Text(
+                'Go to next screen',
+                style: TextStyle(fontSize: 15),
+              ),
+              style: TextButton.styleFrom(
+                backgroundColor: Colors.purple,
+                primary: Colors.white,
+              ),
             ),
-            style: TextButton.styleFrom(
-              backgroundColor: Colors.purple,
-              primary: Colors.white,
+            Container(
+              width: 200,
+              height: 200,
+              color: Colors.blue,
             ),
-          ),
-          Container(
-            width: 200,
-            height: 200,
-            color: Colors.blue,
-          ),
-          Container(
-            width: 200,
-            height: 200,
-            color: Colors.red,
-          ),
-          Container(
-            width: 200,
-            height: 200,
-            color: Colors.yellow,
-          )
-        ],
+            Container(
+              width: 200,
+              height: 200,
+              color: Colors.red,
+            ),
+            Container(
+              width: 200,
+              height: 200,
+              color: Colors.yellow,
+            )
+          ],
+        ),
       ),
     );
   }

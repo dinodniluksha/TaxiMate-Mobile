@@ -11,13 +11,8 @@ class Background extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.amber,
-      margin: EdgeInsets.only(top: getProportionateScreenHeight(20)),
-      height: getProportionateScreenHeight(312),
-      width: getProportionateScreenWidth(275),
-      child: SingleChildScrollView(
-        child: child,
-      ),
+      margin: EdgeInsets.only(top: getProportionateScreenHeight(5)),
+      child: child,
     );
   }
 }

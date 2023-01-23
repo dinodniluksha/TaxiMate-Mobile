@@ -14,27 +14,27 @@ class _BodyState extends State<Body> {
   Widget build(BuildContext context) {
     return Background(
       child: Container(
+        height: 300,
+        alignment: Alignment.bottomCenter,
         color: Colors.orange[600],
-        child: Center(
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              TextButton(
-                onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => InnerScreen()));
-                },
-                child: Text(
-                  'Go to next screen',
-                  style: TextStyle(fontSize: 15),
-                ),
-                style: TextButton.styleFrom(
-                  backgroundColor: Colors.purple,
-                  primary: Colors.white,
-                ),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            TextButton(
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => InnerScreen()));
+              },
+              child: Text(
+                'Go to next screen',
+                style: TextStyle(fontSize: 15),
               ),
-            ],
-          ),
+              style: TextButton.styleFrom(
+                backgroundColor: Colors.purple,
+                primary: Colors.white,
+              ),
+            ),
+          ],
         ),
       ),
     );

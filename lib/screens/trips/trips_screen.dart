@@ -29,7 +29,7 @@ class TripsScreen extends StatelessWidget {
             child: Icon(Icons.arrow_back, color: Colors.black),
             onTap: backAction,
           ),
-          headMiddle: false,
+          screenName: 'Trips',
         ),
       ),
       body: Stack(
@@ -46,7 +46,7 @@ class TripsScreen extends StatelessWidget {
             ),
           ),
           Container(
-            alignment: Alignment.center,
+            alignment: Alignment.topCenter,
             child: Body(),
           ),
         ],

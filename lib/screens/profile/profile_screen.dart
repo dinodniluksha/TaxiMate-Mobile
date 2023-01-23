@@ -29,7 +29,7 @@ class ProfileScreen extends StatelessWidget {
             child: Icon(Icons.arrow_back, color: Colors.black),
             onTap: backAction,
           ),
-          headMiddle: false,
+          screenName: 'Profile',
         ),
       ),
       body: Stack(
