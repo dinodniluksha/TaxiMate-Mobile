@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>450716577980-404br2ht717n0tr3b96fet9ealik6ro3.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.450716577980-404br2ht717n0tr3b96fet9ealik6ro3</string>
+	<key>API_KEY</key>
+	<string>AIzaSyC23qaD-prp0Sx0gSmM0aAT-_P_wO1BqLw</string>
+	<key>GCM_SENDER_ID</key>
+	<string>450716577980</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.taximateMobile</string>
+	<key>PROJECT_ID</key>
+	<string>taximate-1e191</string>
+	<key>STORAGE_BUCKET</key>
+	<string>taximate-1e191.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:450716577980:ios:0ab57db0e3b93b902220b9</string>
+</dict>
+</plist>
